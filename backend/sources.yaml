@@ -1,0 +1,8 @@
+sources:
+  - id: demo_notices
+    name: Demo Notices
+    url: "https://example.com/"
+    category: "Notice"
+    item_selector: "a"
+    title_selector: ":scope"
+    link_selector: ":scope"
