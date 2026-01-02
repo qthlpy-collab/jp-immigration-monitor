@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Method | Immigration Monitor</title>
+  <link rel="stylesheet" href="./assets/style.css"/>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><div class="logo"></div><div>Immigration Monitor | Project</div></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="sources.html">Sources</a>
+        <a href="method.html">Method</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="compliance.html">Compliance</a>
+        <a href="team.html">Team</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="card">
+      <h1>Pipeline Method</h1>
+      <p>
+        Our approach turns unstructured web pages into structured records with transparent quality controls.
+        The system is designed to be maintainable under real-world conditions (layout changes, duplicates, noise).
+      </p>
+    </div>
+
+    <div class="section-title">1) Collect</div>
+    <div class="card">
+      <p><strong>Scheduler</strong> triggers per-source collection jobs (hourly/daily/weekly).</p>
+      <div class="codeblock">
+        - Rate limiting + backoff<br/>
+        - Cache (ETag/Last-Modified when available)<br/>
+        - Store raw HTML for reproducibility
+      </div>
+    </div>
+
+    <div class="section-title">2) Parse & Extract</div>
+    <div class="card">
+      <p>Extract structured fields with source-specific rules, then map to a unified schema.</p>
+      <div class="codeblock">
+        Fields: title, published_at, category, url, source, summary, tags<br/>
+        Fallbacks: regex date extraction + heuristic category classifier
+      </div>
+    </div>
+
+    <div class="section-title">3) Deduplicate</div>
+    <div class="card">
+      <p>Reduce repeated items caused by mirrored pages or minor edits.</p>
+      <div class="codeblock">
+        - Exact match: URL<br/>
+        - Near-duplicate: title similarity<br/>
+        - Content fingerprint: hash of cleaned text
+      </div>
+    </div>
+
+    <div class="section-title">4) Score & Alert</div>
+    <div class="card">
+      <p>Confidence score is based on completeness and stability, and alerts are generated when needed.</p>
+      <div class="codeblock">
+        score = completeness(0-60) + parser_health(0-30) + source_trust(0-10)<br/>
+        alert triggers: missing key fields | DOM diff over threshold | repeated failures
+      </div>
+    </div>
+
+    <div class="section-title">Assessment (how we evaluated)</div>
+    <div class="card">
+      <p>We assessed outcomes using both technical and user-facing measures:</p>
+      <div class="codeblock">
+        - Field completeness rate (%)<br/>
+        - Duplicate reduction (%)<br/>
+        - False alert rate (manual review sample)<br/>
+        - Time-to-find: user test on “latest policy update” task
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>© 2025 Leadership Group Project</div>
+      <div>Next: view sample updates in Dashboard</div>
+    </div>
+  </div>
+
+  <script src="./assets/app.js"></script>
+</body>
+</html>

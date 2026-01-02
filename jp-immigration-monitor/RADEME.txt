@@ -1,0 +1,3 @@
+Please open the website using the index file.
+请用索引文件打开网站
+インデックスファイルを使用してWebサイトを開いてください

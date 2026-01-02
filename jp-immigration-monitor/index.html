@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Japan Immigration Updates Monitor | Project Site</title>
+  <link rel="stylesheet" href="./assets/style.css"/>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <div class="logo"></div>
+        <div>Immigration Monitor | Project</div>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="sources.html">Sources</a>
+        <a href="method.html">Method</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="compliance.html">Compliance</a>
+        <a href="team.html">Team</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="hero">
+      <div class="card">
+        <h1>Japan Immigration Updates Scraping & Monitoring (Course Project)</h1>
+        <p>
+          We built a lightweight system that aggregates public updates related to entry, residence procedures,
+          and policy notices from official channels. The platform demonstrates a full pipeline:
+          <strong>scheduled collection</strong>, <strong>structured extraction</strong>,
+          <strong>deduplication</strong>, <strong>quality scoring</strong>, and <strong>alerting</strong>.
+        </p>
+        <div class="badges">
+          <div class="badge">6-page website deliverable</div>
+          <div class="badge">Reusable data pipeline design</div>
+          <div class="badge">Built-in compliance page</div>
+          <div class="badge">Change detection alerts</div>
+        </div>
+        <hr class="sep"/>
+        <div class="small">
+          Note: This site uses sample data for the demo dashboard. Real scraping must follow website terms, robots.txt,
+          rate limits, and attribution requirements.
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Project Goals</h2>
+        <div class="grid" style="grid-template-columns:1fr;">
+          <div class="kpi">
+            <div class="value">1</div>
+            <div class="label">Centralize scattered immigration updates</div>
+          </div>
+          <div class="kpi">
+            <div class="value">2</div>
+            <div class="label">Convert web pages into structured records</div>
+          </div>
+          <div class="kpi">
+            <div class="value">3</div>
+            <div class="label">Detect changes and notify stakeholders</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title">Core Features</div>
+    <div class="grid">
+      <div class="card">
+        <h3>Scheduled Collection</h3>
+        <p>Source-specific schedules (hourly/daily), incremental pulls, caching, and safe retries.</p>
+      </div>
+      <div class="card">
+        <h3>Extraction & Structuring</h3>
+        <p>Extract titles, dates, categories, keywords, and source metadata for search & analytics.</p>
+      </div>
+      <div class="card">
+        <h3>Quality & Alerts</h3>
+        <p>Flag missing fields, layout changes, and duplicates, with a transparent confidence score.</p>
+      </div>
+    </div>
+
+    <div class="section-title">What’s New (sample)</div>
+    <div class="card">
+      <p>Try the <a href="dashboard.html" style="color:var(--brand)">Dashboard</a> to filter sample updates.</p>
+      <div class="codeblock">
+        ✅ Layout-change detection triggers alerts<br/>
+        ✅ Field completeness: title / published_at / category / source / url<br/>
+        ✅ Dedup: URL + title similarity + content fingerprint
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>© 2025 Leadership Group Project</div>
+      <div>Contact: add your group email on team.html</div>
+    </div>
+  </div>
+
+  <script src="./assets/app.js"></script>
+</body>
+</html>

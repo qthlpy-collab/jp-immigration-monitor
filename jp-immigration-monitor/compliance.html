@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Compliance | Immigration Monitor</title>
+  <link rel="stylesheet" href="./assets/style.css"/>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><div class="logo"></div><div>Immigration Monitor | Project</div></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="sources.html">Sources</a>
+        <a href="method.html">Method</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="compliance.html">Compliance</a>
+        <a href="team.html">Team</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="card">
+      <h1>Compliance & Ethics</h1>
+      <p>
+        This project is designed with a “public information monitoring” mindset. We aim to be respectful to
+        website policies, infrastructure, and content ownership.
+      </p>
+    </div>
+
+    <div class="section-title">Rules we follow</div>
+    <div class="grid">
+      <div class="card">
+        <h3>Robots & Terms</h3>
+        <p>Check robots.txt and Terms of Service; do not scrape pages that disallow automated access.</p>
+      </div>
+      <div class="card">
+        <h3>Rate Limiting</h3>
+        <p>Low frequency by default, exponential backoff, caching, and conditional requests when possible.</p>
+      </div>
+      <div class="card">
+        <h3>Attribution</h3>
+        <p>Store and display source URLs; show short summaries rather than copying full text.</p>
+      </div>
+    </div>
+
+    <div class="section-title">Privacy & Safety</div>
+    <div class="card">
+      <p>
+        We do not collect personal data. If a source contains sensitive identifiers, we redact them.
+        We also avoid publishing scraped full-text content, focusing instead on metadata and links.
+      </p>
+      <div class="codeblock">
+        Data stored: title, date, category, source name, URL, short summary (optional)<br/>
+        Not stored: user accounts, personal identifiers, private documents
+      </div>
+    </div>
+
+    <div class="section-title">Limitations</div>
+    <div class="card">
+      <p>
+        Official sites can change structure or remove pages at any time. Our change detection reduces downtime,
+        but human review remains necessary for critical decisions.
+      </p>
+    </div>
+
+    <div class="footer">
+      <div>© 2025 Leadership Group Project</div>
+      <div>Next: introduce the team</div>
+    </div>
+  </div>
+
+  <script src="./assets/app.js"></script>
+</body>
+</html>

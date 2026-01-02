@@ -1,0 +1,30 @@
+[
+  {
+    "category": "Notice",
+    "title": "Update: Entry / Residence procedure guidance (sample)",
+    "source": "Official bulletin (sample)",
+    "published_at": "2025-12-12T06:30:00Z",
+    "confidence": 92
+  },
+  {
+    "category": "Policy",
+    "title": "Residence status FAQ digest (sample)",
+    "source": "FAQ page (sample)",
+    "published_at": "2025-11-28T03:10:00Z",
+    "confidence": 88
+  },
+  {
+    "category": "Alert",
+    "title": "Parser warning: page layout changed; update selectors (sample)",
+    "source": "Monitoring system (sample)",
+    "published_at": "2025-12-20T09:00:00Z",
+    "confidence": 76
+  },
+  {
+    "category": "Notice",
+    "title": "Holiday office hours reminder (sample)",
+    "source": "Regional office notice (sample)",
+    "published_at": "2025-12-24T01:00:00Z",
+    "confidence": 85
+  }
+]

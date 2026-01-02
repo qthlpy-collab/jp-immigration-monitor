@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Sources | Immigration Monitor</title>
+  <link rel="stylesheet" href="./assets/style.css"/>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><div class="logo"></div><div>Immigration Monitor | Project</div></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="sources.html">Sources</a>
+        <a href="method.html">Method</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="compliance.html">Compliance</a>
+        <a href="team.html">Team</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="card">
+      <h1>Source Strategy</h1>
+      <p>
+        We prioritize <strong>official, publicly available channels</strong>. Each source is evaluated by:
+        update frequency, content importance, accessibility, and scraping permissions.
+        If scraping is disallowed, we use “link-only” curation instead.
+      </p>
+    </div>
+
+    <div class="section-title">Source Inventory (template)</div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Source</th>
+          <th>Content</th>
+          <th>Suggested Frequency</th>
+          <th>Structured Fields</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Official Notices</td>
+          <td>National / agency announcements</td>
+          <td>Policy changes, procedural updates</td>
+          <td>Daily</td>
+          <td>title, date, category, url, summary</td>
+        </tr>
+        <tr>
+          <td>FAQ / Guidance</td>
+          <td>Help pages</td>
+          <td>How-to steps, requirements, forms</td>
+          <td>Weekly</td>
+          <td>topic, last_updated, section, url</td>
+        </tr>
+        <tr>
+          <td>Regional Offices</td>
+          <td>Local office pages</td>
+          <td>Office hours, holiday schedules</td>
+          <td>Weekly / seasonal</td>
+          <td>region, notice, date, url</td>
+        </tr>
+        <tr>
+          <td>Change Monitor</td>
+          <td>DOM diff + checks</td>
+          <td>Layout changes affecting parsers</td>
+          <td>Every run</td>
+          <td>source_id, diff_score, alert_level</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="section-title">Normalization Rules</div>
+    <div class="card">
+      <p>We normalize across sources to support consistent search and analytics:</p>
+      <div class="codeblock">
+        category: Notice | Policy | Alert | Guidance<br/>
+        published_at: ISO-8601 UTC<br/>
+        language: en / ja (optional)<br/>
+        confidence: 0-100 (based on field completeness + parser stability)
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>© 2025 Leadership Group Project</div>
+      <div>Next: see the pipeline in Method</div>
+    </div>
+  </div>
+
+  <script src="./assets/app.js"></script>
+</body>
+</html>

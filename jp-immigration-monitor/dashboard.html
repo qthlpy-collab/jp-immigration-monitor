@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Dashboard | Immigration Monitor</title>
+  <link rel="stylesheet" href="./assets/style.css"/>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><div class="logo"></div><div>Immigration Monitor | Project</div></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="sources.html">Sources</a>
+        <a href="method.html">Method</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="compliance.html">Compliance</a>
+        <a href="team.html">Team</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="card">
+      <h1>Dashboard (Demo)</h1>
+      <p>
+        This dashboard uses <strong>sample data</strong> to demonstrate filtering and display.
+        In a real deployment, this table would be populated from your backend API.
+      </p>
+
+      <div class="controls">
+        <input id="q" type="text" placeholder="Search title or source…" />
+        <select id="cat">
+          <option value="ALL">All categories</option>
+          <option value="Notice">Notice</option>
+          <option value="Policy">Policy</option>
+          <option value="Alert">Alert</option>
+        </select>
+        <select id="minc">
+          <option value="0">Min confidence: 0</option>
+          <option value="70">Min confidence: 70</option>
+          <option value="80">Min confidence: 80</option>
+          <option value="90">Min confidence: 90</option>
+        </select>
+        <button id="refresh">Refresh (demo)</button>
+        <span id="status" class="small"></span>
+      </div>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Title</th>
+            <th>Source</th>
+            <th>Published</th>
+            <th>Confidence</th>
+          </tr>
+        </thead>
+        <tbody id="dataBody"></tbody>
+      </table>
+
+      <hr class="sep"/>
+      <div class="small">
+        Tip: To make this “real”, replace `assets/sample-data.json` with an API call in `assets/app.js`.
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>© 2025 Leadership Group Project</div>
+      <div>Next: review policy and ethics in Compliance</div>
+    </div>
+  </div>
+
+  <script src="./assets/app.js"></script>
+</body>
+</html>
